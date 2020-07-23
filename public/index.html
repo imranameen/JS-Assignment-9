@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Assignmnet 9 Task From Chapter 39 to 67</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Saylani JavaScript Assignment 9</h1>
+
+    <h3>
+      ************************** Chapter 43-48 Task 1 **************************
+    </h3>
+    <a id="youtube" onclick="alert_box()" href="http://www.youtube.com"
+      >Youtube</a
+    >
+    <h3>
+      ************************** Chapter 43-48 Task 2 **************************
+    </h3>
+    <h2>Mobile Phone Lookup</h2>
+    <div id="mobilePhoneDisplay">
+      <div class="mobile">
+        <a href="" onclick="alert_box()">
+          <img src="./Mobile Images/mobile_img1.jpg" alt="" />
+        </a>
+        <h4>Oppo Mobile</h4>
+      </div>
+      <div class="mobile">
+        <a href="" onclick="alert_box()">
+          <img src="./Mobile Images/mobile_img2.jpg" alt="" />
+        </a>
+        <h4>Realme Mobile</h4>
+      </div>
+      <div class="mobile">
+        <a href="" onclick="alert_box()">
+          <img src="./Mobile Images/mobile_img3.jpg" alt="" />
+        </a>
+        <h4>Honor Mobile</h4>
+      </div>
+      <div class="mobile">
+        <a href="" onclick="alert_box()">
+          <img src="./Mobile Images/mobile_img4.jpg" alt="" />
+        </a>
+        <h4>Infinix Mobile</h4>
+      </div>
+    </div>
+
+    <h3>
+      ************************** Chapter 43-48 Task 3 **************************
+    </h3>
+
+    <div class="container">
+      <table>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Country</th>
+          <th>Qualification</th>
+        </tr>
+        <tr>
+          <td>Ali</td>
+          <td>Haider</td>
+          <td>Pakistan</td>
+          <td>Undergraduate</td>
+          <td>
+            <button class="tableButton" onclick="deleteTableRow(this)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Arsalan</td>
+          <td>Ahsan</td>
+          <td>Pakistan</td>
+          <td>Undergraduate</td>
+          <td>
+            <button class="tableButton" onclick="deleteTableRow(this)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Arfeen</td>
+          <td>Khan</td>
+          <td>India</td>
+          <td>Intermediate</td>
+          <td>
+            <button class="tableButton" onclick="deleteTableRow(this)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Talha</td>
+          <td>Yousaf</td>
+          <td>India</td>
+          <td>Matric</td>
+          <td>
+            <button class="tableButton" onclick="deleteTableRow(this)">
+              Delete
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Syed</td>
+          <td>Zohaib</td>
+          <td>Kashmir</td>
+          <td>Undergraduate</td>
+          <td>
+            <button class="tableButton" onclick="deleteTableRow(this)">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <h3>
+      ************************** Chapter 43-48 Task 4 **************************
+    </h3>
+    <div id="background">
+      <img
+        id="imgBackground"
+        onmouseover="defaultImg(this)"
+        onmouseout="changeImg(this)"
+        src="./Background Images/bg3.jpg"
+        alt=""
+      />
+    </div>
+
+    <h3>
+      ************************** Chapter 49-52 Task 1 **************************
+    </h3>
+
+    <div class="container">
+      <form
+        method="POST"
+        autocomplete="on"
+        class="signup_form"
+        name="signup_form"
+      >
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="email"
+              required
+              id="email"
+              placeholder="ah1675179@gmail.com"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="password">Password</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="password"
+              required
+              id="password"
+              placeholder="your password.."
+            />
+            <div class="row" style="margin-left: 5px; margin-top: 10px;">
+              <div class="col-80">
+                <input type="checkbox" onclick="showPassword()" /> Show Password
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              required
+              id="fname"
+              placeholder="Your first name.."
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              required
+              id="lname"
+              placeholder="Your last name.."
+            />
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="saoc">Select Any One Country</option>
+              <option value="pakistan">Pakistan</option>
+              <option value="india">India</option>
+              <option value="srilanka">Srilanka</option>
+              <option value="usa">USA</option>
+              <option value="china">China</option>
+            </select>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="col-75">
+            <textarea
+              required
+              id="subject"
+              placeholder="Write something.."
+              style="height: 200px;"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75"></div>
+          <div class="col-25">
+            <button id="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <h1>SignUp Form Data</h1>
+    <table>
+      <tr>
+        <th>Email</th>
+        <th>Password</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Subject</th>
+      </tr>
+      <tr>
+        <td id="outputEmail">_</td>
+        <td id="outputPassword">_</td>
+        <td id="outputFirstname">_</td>
+        <td id="outputLastname">_</td>
+        <td id="outputubject">_</td>
+      </tr>
+    </table>
+    <h3>
+      ************************** Chapter 49-52 Task 2 **************************
+    </h3>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+        imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span
+          id="dots"
+          >...</span
+        ><span id="more"
+          >erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+          congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut
+          aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim
+          ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec
+          vitae dui eget tellus gravida venenatis. Integer fringilla congue eros
+          non fermentum. Sed dapibus pulvinar nibh tempor porta.</span
+        >
+      </p>
+      <button onclick="showToggle()" id="myBtn">Read more</button>
+    </div>
+    <script src="./app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
